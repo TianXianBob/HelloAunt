@@ -1,0 +1,6 @@
+framework module Pods_HelloAunt {
+  umbrella header "Pods-HelloAunt-umbrella.h"
+
+  export *
+  module * { export * }
+}
