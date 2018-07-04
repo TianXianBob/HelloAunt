@@ -93,32 +93,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C40805A520EC670300C7F8DB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		C40805A620EC672800C7F8DB /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		C40805A720EC67B000C7F8DB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CFCF199820EC823A002724F8 /* Model */,
+				CFCF199720EC823A002724F8 /* View */,
+				CFCF199620EC8218002724F8 /* Widget */,
+				CFCF199520EC81F5002724F8 /* Category */,
+				CFCF199320EC8192002724F8 /* Helpers */,
 				C40805AE20EC695F00C7F8DB /* Macro */,
 				C40805AD20EC68E000C7F8DB /* AppDelegate */,
-				C40805AB20EC687F00C7F8DB /* Helpers */,
-				C40805AA20EC67E200C7F8DB /* Category */,
-				C40805A920EC67CA00C7F8DB /* Widget */,
 				C40805A820EC67C100C7F8DB /* Controller */,
-				C40805A520EC670300C7F8DB /* Model */,
-				C40805A620EC672800C7F8DB /* View */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -129,27 +114,6 @@
 				C446AA4520E878F20063B8DB /* ViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		C40805A920EC67CA00C7F8DB /* Widget */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Widget;
-			sourceTree = "<group>";
-		};
-		C40805AA20EC67E200C7F8DB /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		C40805AB20EC687F00C7F8DB /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C40805AD20EC68E000C7F8DB /* AppDelegate */ = {
@@ -220,6 +184,41 @@
 				C446AA6520E878F20063B8DB /* Info.plist */,
 			);
 			path = HelloAuntUITests;
+			sourceTree = "<group>";
+		};
+		CFCF199320EC8192002724F8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CFCF199520EC81F5002724F8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CFCF199620EC8218002724F8 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		CFCF199720EC823A002724F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFCF199820EC823A002724F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D4ED1A946FF9B96CECA9CCC6 /* Frameworks */ = {
