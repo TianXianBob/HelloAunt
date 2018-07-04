@@ -11,8 +11,11 @@ use_frameworks!
 
 # 自动布局框架
 pod 'SnapKit', '~> 4.0.0'
-# 响应式编程
+# 响应式编程Rac
 pod 'ReactiveCocoa', '~> 7.0'
+# 响应式编程Rx
+pod 'RxSwift',    '~> 4.0'
+pod 'RxCocoa',    '~> 4.0'
 # 网络请求框架
 pod 'Alamofire', '~> 4.7'
 # 基于Alamofire的响应式封装
