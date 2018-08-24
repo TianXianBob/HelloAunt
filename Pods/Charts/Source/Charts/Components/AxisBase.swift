@@ -213,16 +213,6 @@ open class AxisBase: ComponentBase
     /// the total range of values this axis covers
     @objc open var axisRange = Double(0)
     
-    /// The minumum number of labels on the axis
-    @objc open var axisMinLabels = Int(2) {
-        didSet { axisMinLabels = axisMinLabels > 0 ? axisMinLabels : oldValue }
-    }
-    
-    /// The maximum number of labels on the axis
-    @objc open var axisMaxLabels = Int(25) {
-        didSet { axisMinLabels = axisMaxLabels > 0 ? axisMaxLabels : oldValue }
-    }
-    
     /// the number of label entries the axis should have
     /// max = 25,
     /// min = 2,
@@ -238,13 +228,13 @@ open class AxisBase: ComponentBase
         {
             _labelCount = newValue
             
-            if _labelCount > axisMaxLabels
+            if _labelCount > 25
             {
-                _labelCount = axisMaxLabels
+                _labelCount = 25
             }
-            if _labelCount < axisMinLabels
+            if _labelCount < 2
             {
-                _labelCount = axisMinLabels
+                _labelCount = 2
             }
             
             forceLabelsEnabled = false

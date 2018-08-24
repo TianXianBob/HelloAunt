@@ -20,7 +20,7 @@ pod 'Moya/ReactiveSwift', '~> 11.0'
 # Json->Model
 pod 'SwiftyJSON', '~> 4.0'
 # swift的建表工具
-pod 'Charts'
+#pod 'Charts', '~> 3.0.3'
 # 刷新工具
 pod 'DGElasticPullToRefresh'
 # toast工具

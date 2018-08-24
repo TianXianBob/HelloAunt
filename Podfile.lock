@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (4.7.2)
-  - Charts (3.1.1):
-    - Charts/Core (= 3.1.1)
-  - Charts/Core (3.1.1)
+  - Charts (3.0.5):
+    - Charts/Core (= 3.0.5)
+  - Charts/Core (3.0.5)
   - DGElasticPullToRefresh (1.1)
   - Kingfisher (4.8.0)
   - Moya/Core (11.0.2):
@@ -25,7 +25,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
-  - Charts
+  - Charts (~> 3.0.3)
   - DGElasticPullToRefresh
   - Kingfisher
   - Moya/ReactiveSwift (~> 11.0)
@@ -37,7 +37,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
   DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
   Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   Moya: a725035953bc1c0eb1be505ab903984501d82440
@@ -49,6 +49,6 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: f21118265411ae5ef45f78c4147ed7f82c0b6f6d
+PODFILE CHECKSUM: 3d6782dfec5d045fa3875c857c61e0b44c8634b0
 
 COCOAPODS: 1.4.0
