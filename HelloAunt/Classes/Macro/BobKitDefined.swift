@@ -11,4 +11,3 @@ import UIKit
 let KScreenWidth = UIScreen.main.bounds.width
 let KScreenHeight = UIScreen.main.bounds.height
 
-
