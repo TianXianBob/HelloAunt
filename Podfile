@@ -33,5 +33,8 @@ pod 'Kingfisher'
 pod 'SCLAlertView'
 # 日历
 #pod 'JTAppleCalendar', '~> 7.0'
+# 键盘管理
+pod 'IQKeyboardManagerSwift', '6.0.4'
+
 end
 
