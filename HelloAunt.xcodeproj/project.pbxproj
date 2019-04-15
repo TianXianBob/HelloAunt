@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		9F392B555E370628796BEBC5 /* Pods_HelloAunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE3A8D5A516EE28F8E85331 /* Pods_HelloAunt.framework */; };
 		C40805B120EC757F00C7F8DB /* BobKitDefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40805B020EC757F00C7F8DB /* BobKitDefined.swift */; };
+		C442561521E389A5001B3537 /* BobValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442561421E389A5001B3537 /* BobValidationService.swift */; };
 		C446AA4420E878F20063B8DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA4320E878F20063B8DB /* AppDelegate.swift */; };
-		C446AA4620E878F20063B8DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA4520E878F20063B8DB /* ViewController.swift */; };
-		C446AA4920E878F20063B8DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C446AA4720E878F20063B8DB /* Main.storyboard */; };
 		C446AA4B20E878F20063B8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C446AA4A20E878F20063B8DB /* Assets.xcassets */; };
 		C446AA4E20E878F20063B8DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C446AA4C20E878F20063B8DB /* LaunchScreen.storyboard */; };
 		C446AA5920E878F20063B8DB /* HelloAuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA5820E878F20063B8DB /* HelloAuntTests.swift */; };
 		C446AA6420E878F20063B8DB /* HelloAuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA6320E878F20063B8DB /* HelloAuntUITests.swift */; };
-		C446AA7220E88B830063B8DB /* NumbersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA7120E88B830063B8DB /* NumbersExtension.swift */; };
+		C4F213C321CF6D70006B7FE8 /* BobLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F213C221CF6D70006B7FE8 /* BobLoginViewController.swift */; };
+		C4F213C921CFE0D9006B7FE8 /* BobLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F213C821CFE0D9006B7FE8 /* BobLoginViewModel.swift */; };
+		C4F213CE21CFE754006B7FE8 /* UIColor+BobExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F213CD21CFE754006B7FE8 /* UIColor+BobExtension.swift */; };
+		C4F213D021D133C2006B7FE8 /* BobLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F213CF21D133C2006B7FE8 /* BobLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +43,9 @@
 		11D5F73330F2CB51599B90EE /* Pods-HelloAunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt.debug.xcconfig"; sourceTree = "<group>"; };
 		C40805AF20EC6A1A00C7F8DB /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		C40805B020EC757F00C7F8DB /* BobKitDefined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobKitDefined.swift; sourceTree = "<group>"; };
+		C442561421E389A5001B3537 /* BobValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobValidationService.swift; sourceTree = "<group>"; };
 		C446AA4020E878F20063B8DB /* HelloAunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C446AA4320E878F20063B8DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C446AA4520E878F20063B8DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C446AA4820E878F20063B8DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C446AA4A20E878F20063B8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C446AA4D20E878F20063B8DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C446AA4F20E878F20063B8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +55,10 @@
 		C446AA5F20E878F20063B8DB /* HelloAuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloAuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C446AA6320E878F20063B8DB /* HelloAuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloAuntUITests.swift; sourceTree = "<group>"; };
 		C446AA6520E878F20063B8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C446AA7120E88B830063B8DB /* NumbersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersExtension.swift; sourceTree = "<group>"; };
+		C4F213C221CF6D70006B7FE8 /* BobLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobLoginViewController.swift; sourceTree = "<group>"; };
+		C4F213C821CFE0D9006B7FE8 /* BobLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobLoginViewModel.swift; sourceTree = "<group>"; };
+		C4F213CD21CFE754006B7FE8 /* UIColor+BobExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+BobExtension.swift"; path = "HelloAunt/Classes/Module/Profile/ViewModel/UIColor+BobExtension.swift"; sourceTree = SOURCE_ROOT; };
+		C4F213CF21D133C2006B7FE8 /* BobLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BobLoginViewController.xib; sourceTree = "<group>"; };
 		D02C31E46C773D508A1B29B0 /* Pods-HelloAunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,34 +105,18 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		C40805A620EC672800C7F8DB /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		C40805A720EC67B000C7F8DB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C442561321E38984001B3537 /* Helpers */,
+				C4F213BD21CF6CC7006B7FE8 /* Module */,
 				C40805AE20EC695F00C7F8DB /* Macro */,
 				C40805AD20EC68E000C7F8DB /* AppDelegate */,
-				C40805AB20EC687F00C7F8DB /* Helpers */,
 				C40805AA20EC67E200C7F8DB /* Category */,
 				C40805A920EC67CA00C7F8DB /* Widget */,
-				C40805A820EC67C100C7F8DB /* Controller */,
 				C40805A520EC670300C7F8DB /* Model */,
-				C40805A620EC672800C7F8DB /* View */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		C40805A820EC67C100C7F8DB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C446AA4520E878F20063B8DB /* ViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		C40805A920EC67CA00C7F8DB /* Widget */ = {
@@ -141,15 +129,9 @@
 		C40805AA20EC67E200C7F8DB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C4F213CD21CFE754006B7FE8 /* UIColor+BobExtension.swift */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		C40805AB20EC687F00C7F8DB /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C40805AD20EC68E000C7F8DB /* AppDelegate */ = {
@@ -167,6 +149,14 @@
 				C40805B020EC757F00C7F8DB /* BobKitDefined.swift */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		C442561321E38984001B3537 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C442561421E389A5001B3537 /* BobValidationService.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C446AA3720E878F20063B8DB = {
@@ -195,8 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				C40805A720EC67B000C7F8DB /* Classes */,
-				C446AA7120E88B830063B8DB /* NumbersExtension.swift */,
-				C446AA4720E878F20063B8DB /* Main.storyboard */,
 				C446AA4A20E878F20063B8DB /* Assets.xcassets */,
 				C446AA4C20E878F20063B8DB /* LaunchScreen.storyboard */,
 				C446AA4F20E878F20063B8DB /* Info.plist */,
@@ -222,6 +210,80 @@
 			path = HelloAuntUITests;
 			sourceTree = "<group>";
 		};
+		C4F213BD21CF6CC7006B7FE8 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C4F213C421CF6DA0006B7FE8 /* Base */,
+				C4F213BF21CF6CED006B7FE8 /* Profile */,
+				C4F213BE21CF6CD3006B7FE8 /* Record */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C4F213BE21CF6CD3006B7FE8 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		C4F213BF21CF6CED006B7FE8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C4F213CA21CFE564006B7FE8 /* View */,
+				C4F213C121CF6D3B006B7FE8 /* ViewController */,
+				C4F213C021CF6D32006B7FE8 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C4F213C021CF6D32006B7FE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4F213C821CFE0D9006B7FE8 /* BobLoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4F213C121CF6D3B006B7FE8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C4F213C221CF6D70006B7FE8 /* BobLoginViewController.swift */,
+				C4F213CF21D133C2006B7FE8 /* BobLoginViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C4F213C421CF6DA0006B7FE8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C4F213C721CF6DBB006B7FE8 /* ViewModel */,
+				C4F213C521CF6DA9006B7FE8 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C4F213C521CF6DA9006B7FE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4F213C721CF6DBB006B7FE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4F213CA21CFE564006B7FE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D4ED1A946FF9B96CECA9CCC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +304,6 @@
 				C446AA3D20E878F20063B8DB /* Frameworks */,
 				C446AA3E20E878F20063B8DB /* Resources */,
 				D5914422723E575ADF85E2E4 /* [CP] Embed Pods Frameworks */,
-				AF64A5D578E4A1E30EEBA0FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,8 +402,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C446AA4E20E878F20063B8DB /* LaunchScreen.storyboard in Resources */,
+				C4F213D021D133C2006B7FE8 /* BobLoginViewController.xib in Resources */,
 				C446AA4B20E878F20063B8DB /* Assets.xcassets in Resources */,
-				C446AA4920E878F20063B8DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,21 +424,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AF64A5D578E4A1E30EEBA0FD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D5914422723E575ADF85E2E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,9 +437,11 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -406,9 +454,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -443,10 +493,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C442561521E389A5001B3537 /* BobValidationService.swift in Sources */,
 				C40805B120EC757F00C7F8DB /* BobKitDefined.swift in Sources */,
-				C446AA4620E878F20063B8DB /* ViewController.swift in Sources */,
-				C446AA7220E88B830063B8DB /* NumbersExtension.swift in Sources */,
+				C4F213C921CFE0D9006B7FE8 /* BobLoginViewModel.swift in Sources */,
+				C4F213C321CF6D70006B7FE8 /* BobLoginViewController.swift in Sources */,
 				C446AA4420E878F20063B8DB /* AppDelegate.swift in Sources */,
+				C4F213CE21CFE754006B7FE8 /* UIColor+BobExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,14 +534,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C446AA4720E878F20063B8DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C446AA4820E878F20063B8DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C446AA4C20E878F20063B8DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
