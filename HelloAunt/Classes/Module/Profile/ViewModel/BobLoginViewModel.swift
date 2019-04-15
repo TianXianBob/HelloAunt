@@ -11,12 +11,12 @@ import RxSwift
 
 class BobLoginViewModel: NSObject {
     // 输出
-    let validatedUsername : Observable<String>
-    let validatedMobile : Observable<String>
-    let validatedPwd : Observable<String>
+//    let validatedUsername : Observable<String>
+//    let validatedMobile : Observable<String>
+//    let validatedPwd : Observable<String>
 
     init(input:(
-          name:Observable<String>,
+        name:Observable<String>,
         mobile:Observable<String>,
         pwd:Observable<String>
         ),
