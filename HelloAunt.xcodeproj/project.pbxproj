@@ -19,6 +19,10 @@
 		C4F213C921CFE0D9006B7FE8 /* BobLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F213C821CFE0D9006B7FE8 /* BobLoginViewModel.swift */; };
 		C4F213CE21CFE754006B7FE8 /* UIColor+BobExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F213CD21CFE754006B7FE8 /* UIColor+BobExtension.swift */; };
 		C4F213D021D133C2006B7FE8 /* BobLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F213CF21D133C2006B7FE8 /* BobLoginViewController.xib */; };
+		CF2A619622648BB9002991ED /* Target_Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A619522648BB9002991ED /* Target_Login.swift */; };
+		CF2A619C22648CDC002991ED /* BobHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A619B22648CDC002991ED /* BobHomeViewController.swift */; };
+		CF2A619E22648CFC002991ED /* Target_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A619D22648CFC002991ED /* Target_Record.swift */; };
+		CF2A61A122656653002991ED /* Record_CTMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A61A022656653002991ED /* Record_CTMediator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		C4F213C821CFE0D9006B7FE8 /* BobLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobLoginViewModel.swift; sourceTree = "<group>"; };
 		C4F213CD21CFE754006B7FE8 /* UIColor+BobExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+BobExtension.swift"; path = "HelloAunt/Classes/Module/Profile/ViewModel/UIColor+BobExtension.swift"; sourceTree = SOURCE_ROOT; };
 		C4F213CF21D133C2006B7FE8 /* BobLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BobLoginViewController.xib; sourceTree = "<group>"; };
+		CF2A619522648BB9002991ED /* Target_Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_Login.swift; sourceTree = "<group>"; };
+		CF2A619B22648CDC002991ED /* BobHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobHomeViewController.swift; sourceTree = "<group>"; };
+		CF2A619D22648CFC002991ED /* Target_Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_Record.swift; sourceTree = "<group>"; };
+		CF2A61A022656653002991ED /* Record_CTMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record_CTMediator.swift; sourceTree = "<group>"; };
 		D02C31E46C773D508A1B29B0 /* Pods-HelloAunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,7 +221,6 @@
 		C4F213BD21CF6CC7006B7FE8 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				C4F213C421CF6DA0006B7FE8 /* Base */,
 				C4F213BF21CF6CED006B7FE8 /* Profile */,
 				C4F213BE21CF6CD3006B7FE8 /* Record */,
 			);
@@ -223,6 +230,10 @@
 		C4F213BE21CF6CD3006B7FE8 /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				CF2A619A22648CBA002991ED /* ViewModel */,
+				CF2A619922648CB1002991ED /* ViewController */,
+				CF2A619822648CAB002991ED /* View */,
+				CF2A619722648CA5002991ED /* Target */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -230,6 +241,7 @@
 		C4F213BF21CF6CED006B7FE8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				CF2A619222648B75002991ED /* Mediator */,
 				C4F213CA21CFE564006B7FE8 /* View */,
 				C4F213C121CF6D3B006B7FE8 /* ViewController */,
 				C4F213C021CF6D32006B7FE8 /* ViewModel */,
@@ -254,34 +266,50 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		C4F213C421CF6DA0006B7FE8 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				C4F213C721CF6DBB006B7FE8 /* ViewModel */,
-				C4F213C521CF6DA9006B7FE8 /* View */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		C4F213C521CF6DA9006B7FE8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C4F213C721CF6DBB006B7FE8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		C4F213CA21CFE564006B7FE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CF2A619222648B75002991ED /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A619522648BB9002991ED /* Target_Login.swift */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		CF2A619722648CA5002991ED /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A619D22648CFC002991ED /* Target_Record.swift */,
+				CF2A61A022656653002991ED /* Record_CTMediator.swift */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		CF2A619822648CAB002991ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF2A619922648CB1002991ED /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A619B22648CDC002991ED /* BobHomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CF2A619A22648CBA002991ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D4ED1A946FF9B96CECA9CCC6 /* Frameworks */ = {
@@ -357,7 +385,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = bob;
 				TargetAttributes = {
 					C446AA3F20E878F20063B8DB = {
@@ -435,6 +463,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HelloAunt/Pods-HelloAunt-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -453,6 +482,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -499,10 +529,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C442561521E389A5001B3537 /* BobValidationService.swift in Sources */,
+				CF2A61A122656653002991ED /* Record_CTMediator.swift in Sources */,
+				CF2A619C22648CDC002991ED /* BobHomeViewController.swift in Sources */,
 				C40805B120EC757F00C7F8DB /* BobKitDefined.swift in Sources */,
 				C4F213C921CFE0D9006B7FE8 /* BobLoginViewModel.swift in Sources */,
 				C4F213C321CF6D70006B7FE8 /* BobLoginViewController.swift in Sources */,
 				C446AA4420E878F20063B8DB /* AppDelegate.swift in Sources */,
+				CF2A619E22648CFC002991ED /* Target_Record.swift in Sources */,
+				CF2A619622648BB9002991ED /* Target_Login.swift in Sources */,
 				C4F213CE21CFE754006B7FE8 /* UIColor+BobExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +598,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -571,6 +606,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -621,6 +657,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -628,6 +665,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootVc = BobLoginViewController()
+        let rootVc = UINavigationController.init(rootViewController: BobLoginViewController())
         window?.rootViewController = rootVc
         window?.makeKeyAndVisible()
         return true

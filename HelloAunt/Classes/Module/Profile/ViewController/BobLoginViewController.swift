@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import CTMediator
 
 class BobLoginViewController: UIViewController {
     
@@ -21,27 +22,40 @@ class BobLoginViewController: UIViewController {
     
     @IBOutlet weak var loginBtn: UIButton!
 
-
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setSubviews()
         binderViewModel()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
 }
 
 extension BobLoginViewController {
 
     fileprivate func binderViewModel() {
-        let viewModel = BobLoginViewModel(input: (name:nameTF.rx.text.orEmpty.asObservable(),
+        _ = BobLoginViewModel(input: (name:nameTF.rx.text.orEmpty.asObservable(),
            mobile:phoneTF.rx.text.orEmpty.asObservable(),
            pwd:passwordTF.rx.text.orEmpty.asObservable()
             ), dependency: ())
         
-        
+        loginBtn.addTarget(self, action:  #selector(click), for: UIControlEvents.touchUpInside)
     }
     
+    
+    @objc func click() {
+        let vc = CTMediator.sharedInstance()?.record_homeViewController(callback: { (result) in
+            print(result)
+        })
+        
+        navigationController?.pushViewController(vc!, animated: true)
+    }
 }
 
