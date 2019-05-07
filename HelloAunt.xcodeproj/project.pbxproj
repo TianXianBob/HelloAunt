@@ -23,6 +23,8 @@
 		CF2A619C22648CDC002991ED /* BobHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A619B22648CDC002991ED /* BobHomeViewController.swift */; };
 		CF2A619E22648CFC002991ED /* Target_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A619D22648CFC002991ED /* Target_Record.swift */; };
 		CF2A61A122656653002991ED /* Record_CTMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A61A022656653002991ED /* Record_CTMediator.swift */; };
+		CFB1F01A228123CC007A704E /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1F019228123CC007A704E /* Operators.swift */; };
+		CFB1F02322818FE6007A704E /* BobCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB1F02222818FE6007A704E /* BobCalendarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		CF2A619B22648CDC002991ED /* BobHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobHomeViewController.swift; sourceTree = "<group>"; };
 		CF2A619D22648CFC002991ED /* Target_Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_Record.swift; sourceTree = "<group>"; };
 		CF2A61A022656653002991ED /* Record_CTMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record_CTMediator.swift; sourceTree = "<group>"; };
+		CFB1F019228123CC007A704E /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		CFB1F02222818FE6007A704E /* BobCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobCalendarCell.swift; sourceTree = "<group>"; };
 		D02C31E46C773D508A1B29B0 /* Pods-HelloAunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,7 @@
 		C40805A920EC67CA00C7F8DB /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				CFB1F018228123A3007A704E /* RxSwiftOperators */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 		CF2A619822648CAB002991ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFB1F02222818FE6007A704E /* BobCalendarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +316,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFB1F018228123A3007A704E /* RxSwiftOperators */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1F019228123CC007A704E /* Operators.swift */,
+			);
+			path = RxSwiftOperators;
 			sourceTree = "<group>";
 		};
 		D4ED1A946FF9B96CECA9CCC6 /* Frameworks */ = {
@@ -467,6 +481,7 @@
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -486,6 +501,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -529,11 +545,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C442561521E389A5001B3537 /* BobValidationService.swift in Sources */,
+				CFB1F02322818FE6007A704E /* BobCalendarCell.swift in Sources */,
 				CF2A61A122656653002991ED /* Record_CTMediator.swift in Sources */,
 				CF2A619C22648CDC002991ED /* BobHomeViewController.swift in Sources */,
 				C40805B120EC757F00C7F8DB /* BobKitDefined.swift in Sources */,
 				C4F213C921CFE0D9006B7FE8 /* BobLoginViewModel.swift in Sources */,
 				C4F213C321CF6D70006B7FE8 /* BobLoginViewController.swift in Sources */,
+				CFB1F01A228123CC007A704E /* Operators.swift in Sources */,
 				C446AA4420E878F20063B8DB /* AppDelegate.swift in Sources */,
 				CF2A619E22648CFC002991ED /* Target_Record.swift in Sources */,
 				CF2A619622648BB9002991ED /* Target_Login.swift in Sources */,

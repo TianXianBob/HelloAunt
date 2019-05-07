@@ -22,7 +22,8 @@ def thirdlibs
   # Alert View
   pod 'SCLAlertView'
   # 日历
-  #pod 'JTAppleCalendar', '~> 7.0'
+  pod 'JTAppleCalendar', '~> 7.0'
+#  pod 'CVCalendar', '~> 1.6.2'
   # 键盘管理
   pod 'IQKeyboardManagerSwift', '6.0.4'
   ## 组件化方案

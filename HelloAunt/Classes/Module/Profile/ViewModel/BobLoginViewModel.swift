@@ -9,26 +9,52 @@
 import UIKit
 import RxSwift
 
+
+enum Result {
+    case ok(message:String)
+    case empty
+    case failed(message:String)
+}
+
 class BobLoginViewModel: NSObject {
     // 输出
-//    let validatedUsername : Observable<String>
-//    let validatedMobile : Observable<String>
-//    let validatedPwd : Observable<String>
+//    let name : Observable<String>
+//    let mobile : Observable<String>
+//    let pwd : Observable<String>
 
-    init(input:(
-        name:Observable<String>,
-        mobile:Observable<String>,
-        pwd:Observable<String>
-        ),
-        dependency:(
+    
+    var name = Variable("")
+    let mobile = Variable("")
+    let pwd = Variable("")
+    
+//    let nameUsable : Observable<Result>
+    let minCharactersCount = 6
+
+    override init() {
+//        nameUsable = name.asObservable().flatMapLatest({ name in
+//            return validationUserName(name);
+//        })
         
         
-        
-        
-        )
-        
-        
-        ) {
-//        validatedUsername = input.name.flatMapLatest(<#T##selector: (String) throws -> ObservableConvertibleType##(String) throws -> ObservableConvertibleType#>)
+        super.init()
     }
+ 
+    
+    func validationUserName(_ name:String) -> Observable<Result> {
+        if (name.count == 0) {
+            return Observable.just(Result.empty)
+        }
+        
+        if (name.count < minCharactersCount) {
+            return Observable.just(Result.failed(message: "用户名长度至少为6位"))
+        }
+        
+//        if checkHasUserName(name) {
+//            return Observable.just(Result.failed(message: "用户名已存在"))
+//        }
+        
+        return Observable.just(Result.ok(message: "用户名可用"))
+        
+    }
+    
 }
