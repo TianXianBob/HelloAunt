@@ -6,7 +6,7 @@ PODS:
   - CTMediator (25)
   - DGElasticPullToRefresh (1.1)
   - IQKeyboardManagerSwift (6.0.4)
-  - JTAppleCalendar (7.1.7)
+  - JTAppleCalendar (7.1.6)
   - Kingfisher (4.10.1)
   - Moya/Core (11.0.2):
     - Alamofire (~> 4.1)
@@ -71,7 +71,7 @@ SPEC CHECKSUMS:
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
   DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
   IQKeyboardManagerSwift: 36dbe324b4f9793f5f41ba5227f3e7c76dfefd50
-  JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
+  JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   NVActivityIndicatorView: 1e4e3ed79248cf1666af182593c3a2acf0fcf193
@@ -86,4 +86,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 02aafbf974d25ed768d30bfc118181e47dcb3264
 
-COCOAPODS: 1.7.0.beta.3
+COCOAPODS: 1.5.3

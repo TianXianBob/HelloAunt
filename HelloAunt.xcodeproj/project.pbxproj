@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9F392B555E370628796BEBC5 /* Pods_HelloAunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE3A8D5A516EE28F8E85331 /* Pods_HelloAunt.framework */; };
 		C40805B120EC757F00C7F8DB /* BobKitDefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40805B020EC757F00C7F8DB /* BobKitDefined.swift */; };
+		C40E77BC22B3EB1100DA30A4 /* BobRecordCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40E77BB22B3EB1100DA30A4 /* BobRecordCellView.swift */; };
+		C40E77BE22B3EB8900DA30A4 /* BobRecordCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40E77BD22B3EB8900DA30A4 /* BobRecordCellView.xib */; };
 		C442561521E389A5001B3537 /* BobValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442561421E389A5001B3537 /* BobValidationService.swift */; };
 		C446AA4420E878F20063B8DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA4320E878F20063B8DB /* AppDelegate.swift */; };
 		C446AA4B20E878F20063B8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C446AA4A20E878F20063B8DB /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		11D5F73330F2CB51599B90EE /* Pods-HelloAunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt.debug.xcconfig"; sourceTree = "<group>"; };
 		C40805AF20EC6A1A00C7F8DB /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		C40805B020EC757F00C7F8DB /* BobKitDefined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobKitDefined.swift; sourceTree = "<group>"; };
+		C40E77BB22B3EB1100DA30A4 /* BobRecordCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobRecordCellView.swift; sourceTree = "<group>"; };
+		C40E77BD22B3EB8900DA30A4 /* BobRecordCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BobRecordCellView.xib; sourceTree = "<group>"; };
 		C442561421E389A5001B3537 /* BobValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobValidationService.swift; sourceTree = "<group>"; };
 		C446AA4020E878F20063B8DB /* HelloAunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C446AA4320E878F20063B8DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				CFB1F02222818FE6007A704E /* BobCalendarCell.swift */,
+				C40E77BB22B3EB1100DA30A4 /* BobRecordCellView.swift */,
+				C40E77BD22B3EB8900DA30A4 /* BobRecordCellView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 				C446AA4E20E878F20063B8DB /* LaunchScreen.storyboard in Resources */,
 				C4F213D021D133C2006B7FE8 /* BobLoginViewController.xib in Resources */,
 				C446AA4B20E878F20063B8DB /* Assets.xcassets in Resources */,
+				C40E77BE22B3EB8900DA30A4 /* BobRecordCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +482,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HelloAunt/Pods-HelloAunt-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
@@ -516,7 +523,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloAunt/Pods-HelloAunt-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED238A34CE9AB4268B39F06D /* [CP] Check Pods Manifest.lock */ = {
@@ -546,6 +553,7 @@
 			files = (
 				C442561521E389A5001B3537 /* BobValidationService.swift in Sources */,
 				CFB1F02322818FE6007A704E /* BobCalendarCell.swift in Sources */,
+				C40E77BC22B3EB1100DA30A4 /* BobRecordCellView.swift in Sources */,
 				CF2A61A122656653002991ED /* Record_CTMediator.swift in Sources */,
 				CF2A619C22648CDC002991ED /* BobHomeViewController.swift in Sources */,
 				C40805B120EC757F00C7F8DB /* BobKitDefined.swift in Sources */,
