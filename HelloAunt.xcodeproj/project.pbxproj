@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		9F392B555E370628796BEBC5 /* Pods_HelloAunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE3A8D5A516EE28F8E85331 /* Pods_HelloAunt.framework */; };
 		C40805B120EC757F00C7F8DB /* BobKitDefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40805B020EC757F00C7F8DB /* BobKitDefined.swift */; };
+		C440CBEF25E742DE00347EF5 /* BobGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CBEE25E742DE00347EF5 /* BobGuidePageViewController.swift */; };
+		C440CBF625E743FD00347EF5 /* BobUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CBF525E743FD00347EF5 /* BobUserModel.swift */; };
 		C442561521E389A5001B3537 /* BobValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442561421E389A5001B3537 /* BobValidationService.swift */; };
 		C446AA4420E878F20063B8DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA4320E878F20063B8DB /* AppDelegate.swift */; };
 		C446AA4B20E878F20063B8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C446AA4A20E878F20063B8DB /* Assets.xcassets */; };
 		C446AA4E20E878F20063B8DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C446AA4C20E878F20063B8DB /* LaunchScreen.storyboard */; };
 		C446AA5920E878F20063B8DB /* HelloAuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA5820E878F20063B8DB /* HelloAuntTests.swift */; };
 		C446AA6420E878F20063B8DB /* HelloAuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446AA6320E878F20063B8DB /* HelloAuntUITests.swift */; };
+		C468FF9B25ED15E600CEE57E /* BobGuidePageCellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468FF9A25ED15E600CEE57E /* BobGuidePageCellDataModel.swift */; };
+		C468FFA325ED17F400CEE57E /* BobDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468FFA225ED17F400CEE57E /* BobDateHelper.swift */; };
+		C468FFA825ED183400CEE57E /* BobGuidePageViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468FFA725ED183400CEE57E /* BobGuidePageViewControllerViewModel.swift */; };
+		C4DBEB3925E7991700D180E6 /* BobHomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBEB3825E7991700D180E6 /* BobHomeViewControllerViewModel.swift */; };
 		C4F213C321CF6D70006B7FE8 /* BobLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F213C221CF6D70006B7FE8 /* BobLoginViewController.swift */; };
 		C4F213C921CFE0D9006B7FE8 /* BobLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F213C821CFE0D9006B7FE8 /* BobLoginViewModel.swift */; };
 		C4F213CE21CFE754006B7FE8 /* UIColor+BobExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F213CD21CFE754006B7FE8 /* UIColor+BobExtension.swift */; };
@@ -47,6 +53,8 @@
 		11D5F73330F2CB51599B90EE /* Pods-HelloAunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAunt/Pods-HelloAunt.debug.xcconfig"; sourceTree = "<group>"; };
 		C40805AF20EC6A1A00C7F8DB /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		C40805B020EC757F00C7F8DB /* BobKitDefined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobKitDefined.swift; sourceTree = "<group>"; };
+		C440CBEE25E742DE00347EF5 /* BobGuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobGuidePageViewController.swift; sourceTree = "<group>"; };
+		C440CBF525E743FD00347EF5 /* BobUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobUserModel.swift; sourceTree = "<group>"; };
 		C442561421E389A5001B3537 /* BobValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobValidationService.swift; sourceTree = "<group>"; };
 		C446AA4020E878F20063B8DB /* HelloAunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C446AA4320E878F20063B8DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +67,10 @@
 		C446AA5F20E878F20063B8DB /* HelloAuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloAuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C446AA6320E878F20063B8DB /* HelloAuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloAuntUITests.swift; sourceTree = "<group>"; };
 		C446AA6520E878F20063B8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C468FF9A25ED15E600CEE57E /* BobGuidePageCellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobGuidePageCellDataModel.swift; sourceTree = "<group>"; };
+		C468FFA225ED17F400CEE57E /* BobDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobDateHelper.swift; sourceTree = "<group>"; };
+		C468FFA725ED183400CEE57E /* BobGuidePageViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobGuidePageViewControllerViewModel.swift; sourceTree = "<group>"; };
+		C4DBEB3825E7991700D180E6 /* BobHomeViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BobHomeViewControllerViewModel.swift; path = HelloAunt/Classes/Module/User/Model/BobHomeViewControllerViewModel.swift; sourceTree = SOURCE_ROOT; };
 		C4F213C221CF6D70006B7FE8 /* BobLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobLoginViewController.swift; sourceTree = "<group>"; };
 		C4F213C821CFE0D9006B7FE8 /* BobLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobLoginViewModel.swift; sourceTree = "<group>"; };
 		C4F213CD21CFE754006B7FE8 /* UIColor+BobExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+BobExtension.swift"; path = "HelloAunt/Classes/Module/Profile/ViewModel/UIColor+BobExtension.swift"; sourceTree = SOURCE_ROOT; };
@@ -105,14 +117,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C40805A520EC670300C7F8DB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		C40805A720EC67B000C7F8DB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +126,6 @@
 				C40805AD20EC68E000C7F8DB /* AppDelegate */,
 				C40805AA20EC67E200C7F8DB /* Category */,
 				C40805A920EC67CA00C7F8DB /* Widget */,
-				C40805A520EC670300C7F8DB /* Model */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -159,10 +162,61 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
+		C440CBDF25E7423F00347EF5 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				C468FF9925ED15C900CEE57E /* Model */,
+				C440CBE225E7426700347EF5 /* View */,
+				C440CBE125E7425E00347EF5 /* ViewModel */,
+				C440CBE025E7424900347EF5 /* ViewController */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		C440CBE025E7424900347EF5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C440CBEE25E742DE00347EF5 /* BobGuidePageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C440CBE125E7425E00347EF5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C468FFA725ED183400CEE57E /* BobGuidePageViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C440CBE225E7426700347EF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C440CBF325E743E000347EF5 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C440CBF425E743E800347EF5 /* Model */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C440CBF425E743E800347EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C440CBF525E743FD00347EF5 /* BobUserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C442561321E38984001B3537 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				C442561421E389A5001B3537 /* BobValidationService.swift */,
+				C468FFA225ED17F400CEE57E /* BobDateHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -218,9 +272,19 @@
 			path = HelloAuntUITests;
 			sourceTree = "<group>";
 		};
+		C468FF9925ED15C900CEE57E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C468FF9A25ED15E600CEE57E /* BobGuidePageCellDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C4F213BD21CF6CC7006B7FE8 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C440CBF325E743E000347EF5 /* User */,
+				C440CBDF25E7423F00347EF5 /* Guide */,
 				C4F213BF21CF6CED006B7FE8 /* Profile */,
 				C4F213BE21CF6CD3006B7FE8 /* Record */,
 			);
@@ -241,7 +305,7 @@
 		C4F213BF21CF6CED006B7FE8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				CF2A619222648B75002991ED /* Mediator */,
+				CF2A619222648B75002991ED /* Target */,
 				C4F213CA21CFE564006B7FE8 /* View */,
 				C4F213C121CF6D3B006B7FE8 /* ViewController */,
 				C4F213C021CF6D32006B7FE8 /* ViewModel */,
@@ -273,12 +337,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CF2A619222648B75002991ED /* Mediator */ = {
+		CF2A619222648B75002991ED /* Target */ = {
 			isa = PBXGroup;
 			children = (
 				CF2A619522648BB9002991ED /* Target_Login.swift */,
 			);
-			path = Mediator;
+			path = Target;
 			sourceTree = "<group>";
 		};
 		CF2A619722648CA5002991ED /* Target */ = {
@@ -308,6 +372,7 @@
 		CF2A619A22648CBA002991ED /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C4DBEB3825E7991700D180E6 /* BobHomeViewControllerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -465,38 +530,40 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -532,10 +599,16 @@
 				CF2A61A122656653002991ED /* Record_CTMediator.swift in Sources */,
 				CF2A619C22648CDC002991ED /* BobHomeViewController.swift in Sources */,
 				C40805B120EC757F00C7F8DB /* BobKitDefined.swift in Sources */,
+				C468FFA325ED17F400CEE57E /* BobDateHelper.swift in Sources */,
+				C440CBF625E743FD00347EF5 /* BobUserModel.swift in Sources */,
+				C4DBEB3925E7991700D180E6 /* BobHomeViewControllerViewModel.swift in Sources */,
+				C440CBEF25E742DE00347EF5 /* BobGuidePageViewController.swift in Sources */,
+				C468FF9B25ED15E600CEE57E /* BobGuidePageCellDataModel.swift in Sources */,
 				C4F213C921CFE0D9006B7FE8 /* BobLoginViewModel.swift in Sources */,
 				C4F213C321CF6D70006B7FE8 /* BobLoginViewController.swift in Sources */,
 				C446AA4420E878F20063B8DB /* AppDelegate.swift in Sources */,
 				CF2A619E22648CFC002991ED /* Target_Record.swift in Sources */,
+				C468FFA825ED183400CEE57E /* BobGuidePageViewControllerViewModel.swift in Sources */,
 				CF2A619622648BB9002991ED /* Target_Login.swift in Sources */,
 				C4F213CE21CFE754006B7FE8 /* UIColor+BobExtension.swift in Sources */,
 			);

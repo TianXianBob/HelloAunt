@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
 def thirdlibs
   # 自动布局框架
   pod 'SnapKit', '~> 4.0.0'
@@ -14,7 +17,7 @@ def thirdlibs
   # swift的建表工具
   pod 'Charts'
   # 刷新工具
-  pod 'DGElasticPullToRefresh'
+#  pod 'DGElasticPullToRefresh'
   # toast工具
   pod 'NVActivityIndicatorView'
   # 网络图片加载
@@ -27,8 +30,11 @@ def thirdlibs
   pod 'IQKeyboardManagerSwift', '6.0.4'
   ## 组件化方案
   pod 'CTMediator'
+  ## 轮播图
+  pod 'FSPagerView'
+  ## 分类方法
+  pod 'YYCategories'
 
-  
 end
 
 def submodule

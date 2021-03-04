@@ -46,12 +46,12 @@ extension BobLoginViewController {
            pwd:passwordTF.rx.text.orEmpty.asObservable()
             ), dependency: ())
         
-        loginBtn.addTarget(self, action:  #selector(click), for: UIControlEvents.touchUpInside)
+        loginBtn.addTarget(self, action:  #selector(click), for: UIControl.Event.touchUpInside)
     }
     
     
     @objc func click() {
-        let vc = CTMediator.sharedInstance()?.record_homeViewController(callback: { (result) in
+        let vc = CTMediator.sharedInstance().record_homeViewController(callback: { (result) in
             print(result)
         })
         

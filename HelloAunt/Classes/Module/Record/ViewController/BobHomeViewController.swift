@@ -9,15 +9,25 @@
 import UIKit
 
 class BobHomeViewController: UIViewController {
-
+    let vm = BobHomeViewControllerViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setSubviews()
+        showGuidePageIfNeeded()
     }
 }
 
 extension BobHomeViewController {
     func setSubviews() {
         self.view.backgroundColor = UIColor.white
+    }
+    
+    func showGuidePageIfNeeded() {
+        if !vm.isShowedGuidePage {
+            let guidePageVc = BobGuidePageViewController()
+            guidePageVc.modalPresentationStyle = .fullScreen
+            present(guidePageVc, animated: true, completion: nil)
+        }
     }
 }
